@@ -7,7 +7,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>MyApplication</RootNamespace>
     <AssemblyName>MyApplication</AssemblyName>
-    <Name>TwinCAT Measurement Project7</Name>
+    <Name>TwinCAT Gantry Scope</Name>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Scope YT Project1.tcscope">
