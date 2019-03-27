@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.12">
+  <POU Name="MAIN" Id="{d369ffcb-6827-470a-b659-0c129921b132}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	Axis1: AXIS_REF;
+	bEna1: BOOL;
+	bEna2: BOOL;
+	bSTO1 AT %I*: BOOL;
+	bSTO2 AT %I*: BOOL;
+	fbPower1: MC_POWER;
+	bLimFwd1 AT %I*: BOOL;
+	bLimBwd1 AT %I*: BOOL;
+	Axis2: AXIS_REF;
+	fbPower2: MC_POWER;
+	bLimFwd2 AT %I*: BOOL;
+	bLimBwd2 AT %I*: BOOL;
+	nRawEnc1 AT %I*: ULINT;
+	nRawEnc2 AT %I*: ULINT;
+	nGantryOffset: LINT;
+	nGantryErr: LINT;
+	nAbsGantryErr: ULINT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbPower1(Axis:=Axis1,
+	Enable:=bSTO1 AND bSTO2 AND bEna1,
+	Enable_Positive:=bLimFwd1,
+	Enable_Negative:=bLimBwd1);
+fbPower2(Axis:=Axis2,
+	Enable:=bSTO1 AND bSTO2 AND bEna2,
+	Enable_Positive:=bLimFwd2,
+	Enable_Negative:=bLimBwd2);
+nGantryErr := nRawEnc2 - nRawEnc1 + nGantryOffset;
+nAbsGantryErr := ABS(nGantryErr);]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="14" Count="7" />
+      <LineId Id="43" Count="0" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
