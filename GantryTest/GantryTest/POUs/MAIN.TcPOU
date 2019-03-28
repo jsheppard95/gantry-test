@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.12">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.17">
   <POU Name="MAIN" Id="{d369ffcb-6827-470a-b659-0c129921b132}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
@@ -20,24 +20,30 @@ VAR
 	nGantryOffset: LINT;
 	nGantryErr: LINT;
 	nAbsGantryErr: ULINT;
+	fPosErr1: INT;
+	fPosErr2: INT;
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[fbPower1(Axis:=Axis1,
 	Enable:=bSTO1 AND bSTO2 AND bEna1,
-	Enable_Positive:=bLimFwd1,
-	Enable_Negative:=bLimBwd1);
+	Enable_Positive:=bLimFwd1 AND bLimFwd2,
+	Enable_Negative:=bLimBwd1 AND bLimBwd2);
 fbPower2(Axis:=Axis2,
 	Enable:=bSTO1 AND bSTO2 AND bEna2,
-	Enable_Positive:=bLimFwd2,
-	Enable_Negative:=bLimBwd2);
+	Enable_Positive:=bLimFwd2 AND bLimFwd1,
+	Enable_Negative:=bLimBwd2 AND bLimBwd1);
 nGantryErr := nRawEnc2 - nRawEnc1 + nGantryOffset;
-nAbsGantryErr := ABS(nGantryErr);]]></ST>
+nAbsGantryErr := ABS(nGantryErr);
+fPosErr1 := LREAL_TO_INT(Axis1.NcToPlc.PosDiff*1000000);
+fPosErr2 := LREAL_TO_INT(Axis2.NcToPlc.PosDiff*1000000);]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="14" Count="7" />
       <LineId Id="43" Count="0" />
       <LineId Id="2" Count="0" />
+      <LineId Id="64" Count="0" />
+      <LineId Id="67" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>
