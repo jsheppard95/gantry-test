@@ -126,7 +126,7 @@
                 <SymbolName>Axes.Axis 2.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>73</FileHandle>
+                <FileHandle>1</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.59.121.62.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -351,7 +351,7 @@
                 <SymbolName>Axes.Axis 2.SetPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>74</FileHandle>
+                <FileHandle>2</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.59.121.62.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -610,7 +610,7 @@
                 <SymbolName>Axes.Axis 2.ActVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>75</FileHandle>
+                <FileHandle>3</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.59.121.62.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -835,7 +835,7 @@
                 <SymbolName>Axes.Axis 2.SetVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>76</FileHandle>
+                <FileHandle>4</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.59.121.62.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1094,7 +1094,7 @@
                 <SymbolName>Axes.Axis 2.ActAcc</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>77</FileHandle>
+                <FileHandle>5</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.59.121.62.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1319,7 +1319,7 @@
                 <SymbolName>Axes.Axis 2.SetAcc</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>78</FileHandle>
+                <FileHandle>6</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.59.121.62.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1578,7 +1578,7 @@
                 <SymbolName>MAIN.nAbsGantryErr</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>79</FileHandle>
+                <FileHandle>7</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.59.121.62.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
@@ -1837,7 +1837,7 @@
                 <SymbolName>MAIN.Axis1.Status.HasJob</SymbolName>
                 <SymbolComment> StateDWord bit 8 </SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>80</FileHandle>
+                <FileHandle>8</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.59.121.62.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
