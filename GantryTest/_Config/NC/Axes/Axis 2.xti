@@ -1324,7 +1324,7 @@ External Setpoint Generation:
 	<Axis Id="2" CreateSymbols="true" AxisType="1">
 		<Name>__FILENAME__</Name>
 		<AxisPara>
-			<Dynamic DelayTime="0.008"/>
+			<Dynamic Acceleration="0.5" Deceleration="0.5" DelayTime="0.008"/>
 			<Velo RefSearch="0.1" RefSync="0.1" SlowManual="0.25" FastManual="0.5" Maximum="1"/>
 			<PositionAreaControl Range="0.1"/>
 			<TargetPosControl Range="0.1"/>
@@ -1374,8 +1374,8 @@ External Setpoint Generation:
 			</Vars>
 		</Encoder>
 		<Drive Name="Drive" DrvType="24">
-			<DrvPara Inverse="true">
-				<Analog VeloReferenz="1.2206875"/>
+			<DrvPara>
+				<Analog VeloReferenz="0.39062"/>
 				<TimeComp TaskDelayCycles="1"/>
 			</DrvPara>
 			<Vars VarGrpType="1">
@@ -1466,7 +1466,7 @@ Drive Status 4 (manually linked):
 		<Controller Name="Ctrl" CtrType="2">
 			<CtrPara PriorControlFactor="1">
 				<PosDiffControl Range="0.1"/>
-				<PID PosKp="10" PosExtKp="1" DeadBandPosition="4e-05"/>
+				<PID PosKp="10" PosExtKp="1" DeadBandPosition="0.0001"/>
 				<Observer BandWidth="20"/>
 			</CtrPara>
 		</Controller>

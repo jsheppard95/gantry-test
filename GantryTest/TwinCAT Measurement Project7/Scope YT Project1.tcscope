@@ -5,7 +5,7 @@
   <IsWizardTemplate>false</IsWizardTemplate>
   <LayoutString>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;Layout&gt;
-  &lt;Window Guid="97332cdc-477f-498a-a8da-59f3e238ae5a" LastFocused="131981942804838009" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="e3627557-a720-4c2a-9af0-d310b5d3d828" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="97332cdc-477f-498a-a8da-59f3e238ae5a" LastFocused="131982869774802321" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="e3627557-a720-4c2a-9af0-d310b5d3d828" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;DocumentContainer Dock="5"&gt;
     &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
       &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="e3627557-a720-4c2a-9af0-d310b5d3d828" Collapsed="0" SelectedControl="97332cdc-477f-498a-a8da-59f3e238ae5a"&gt;
@@ -47,7 +47,7 @@
         <BorderColorValue>-1973016</BorderColorValue>
         <IsSmooth>false</IsSmooth>
         <SmoothTime>100</SmoothTime>
-        <YZoom>true</YZoom>
+        <YZoom>false</YZoom>
         <StackedYAxes>true</StackedYAxes>
         <Legend>false</Legend>
         <VisibleToolstrip>true</VisibleToolstrip>
@@ -118,15 +118,15 @@
               <IdentHandle>1</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16641</IndexGroup>
+                <IndexGroup>16642</IndexGroup>
                 <IndexOffset>65538</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.Axis 1.ActPos</SymbolName>
+                <SymbolName>Axes.Axis 2.ActPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>33</FileHandle>
+                <FileHandle>73</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.59.121.62.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -343,15 +343,15 @@
               <IdentHandle>2</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16641</IndexGroup>
+                <IndexGroup>16642</IndexGroup>
                 <IndexOffset>10</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.Axis 1.SetPos</SymbolName>
+                <SymbolName>Axes.Axis 2.SetPos</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>34</FileHandle>
+                <FileHandle>74</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.59.121.62.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -602,15 +602,15 @@
               <IdentHandle>3</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16641</IndexGroup>
+                <IndexGroup>16642</IndexGroup>
                 <IndexOffset>65541</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.Axis 1.ActVelo</SymbolName>
+                <SymbolName>Axes.Axis 2.ActVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>35</FileHandle>
+                <FileHandle>75</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.59.121.62.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -827,15 +827,15 @@
               <IdentHandle>4</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16641</IndexGroup>
+                <IndexGroup>16642</IndexGroup>
                 <IndexOffset>14</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.Axis 1.SetVelo</SymbolName>
+                <SymbolName>Axes.Axis 2.SetVelo</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>36</FileHandle>
+                <FileHandle>76</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.59.121.62.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1086,15 +1086,15 @@
               <IdentHandle>5</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16641</IndexGroup>
+                <IndexGroup>16642</IndexGroup>
                 <IndexOffset>65542</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.Axis 1.ActAcc</SymbolName>
+                <SymbolName>Axes.Axis 2.ActAcc</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>37</FileHandle>
+                <FileHandle>77</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.59.121.62.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1311,15 +1311,15 @@
               <IdentHandle>6</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
-                <IndexGroup>16641</IndexGroup>
+                <IndexGroup>16642</IndexGroup>
                 <IndexOffset>15</IndexOffset>
                 <Unit />
                 <TargetPort>501</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>Axes.Axis 1.SetAcc</SymbolName>
+                <SymbolName>Axes.Axis 2.SetAcc</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>38</FileHandle>
+                <FileHandle>78</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.59.121.62.1.1</AmsNetIdString>
                 <SampleTime>20000</SampleTime>
@@ -1578,7 +1578,7 @@
                 <SymbolName>MAIN.nAbsGantryErr</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>39</FileHandle>
+                <FileHandle>79</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.59.121.62.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
@@ -1837,7 +1837,7 @@
                 <SymbolName>MAIN.Axis1.Status.HasJob</SymbolName>
                 <SymbolComment> StateDWord bit 8 </SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
-                <FileHandle>40</FileHandle>
+                <FileHandle>80</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
                 <AmsNetIdString>5.59.121.62.1.1</AmsNetIdString>
                 <SampleTime>100000</SampleTime>
@@ -2069,7 +2069,7 @@
         <Precision>6</Precision>
       </CursorModule>
       <Operating>
-        <DisplayWidth>530000000</DisplayWidth>
+        <DisplayWidth>100000000</DisplayWidth>
       </Operating>
       <ChartType>XT</ChartType>
       <SortPriority>-1</SortPriority>
